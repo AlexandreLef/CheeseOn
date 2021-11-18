@@ -42,21 +42,32 @@
                                 <rect key="frame" x="30" y="200" width="354" height="182"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDa-wp-7UE">
-                                <rect key="frame" x="103" y="647" width="73" height="30"/>
+                                <rect key="frame" x="103" y="647" width="180" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="x4C-3d-Ohf"/>
+                                    <constraint firstAttribute="width" constant="180" id="z5g-5b-MhZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
                                 <state key="normal" title="Connexion">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="connect" destination="acs-yt-ThS" eventType="touchUpInside" id="iSh-Ar-Ii4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QD0-se-m7h">
                                 <rect key="frame" x="106" y="551" width="152" height="22"/>
-                                <color key="tintColor" systemColor="labelColor"/>
+                                <color key="tintColor" red="0.60784313725490191" green="0.43137254901960786" blue="0.76470588235294112" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Rester Connecté">
                                     <color key="titleColor" systemColor="labelColor"/>
-                                    <imageReference key="image" image="circle" catalog="system" symbolScale="small"/>
+                                    <imageReference key="image" image="circle.fill" catalog="system" symbolScale="small"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="small" weight="light">
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                     </preferredSymbolConfiguration>
                                 </state>
+                                <connections>
+                                    <action selector="checkKeepConnect" destination="acs-yt-ThS" eventType="touchUpInside" id="5ea-hB-tW0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZPk-31-9a4"/>
@@ -72,7 +83,6 @@
                             <constraint firstItem="fDa-wp-7UE" firstAttribute="top" secondItem="QD0-se-m7h" secondAttribute="bottom" constant="74" id="ecM-py-lo7"/>
                             <constraint firstItem="5Io-ka-m3j" firstAttribute="top" secondItem="B6G-Kc-WYm" secondAttribute="bottom" constant="97" id="ipI-ye-9sc"/>
                             <constraint firstItem="B6G-Kc-WYm" firstAttribute="leading" secondItem="ZPk-31-9a4" secondAttribute="leading" constant="30" id="mnF-nH-pic"/>
-                            <constraint firstItem="ZPk-31-9a4" firstAttribute="trailing" secondItem="fDa-wp-7UE" secondAttribute="trailing" constant="238" id="uHG-6u-9qG"/>
                             <constraint firstItem="ZPk-31-9a4" firstAttribute="trailing" secondItem="QD0-se-m7h" secondAttribute="trailing" constant="156" id="uqJ-Gz-09B"/>
                             <constraint firstItem="ZPk-31-9a4" firstAttribute="trailing" secondItem="5Io-ka-m3j" secondAttribute="trailing" constant="103" id="vKx-2P-bow"/>
                         </constraints>
@@ -91,7 +101,7 @@
         <!--Home View Controller-->
         <scene sceneID="moZ-mj-KOD">
             <objects>
-                <viewController id="AlF-ZS-eci" customClass="HomeViewController" customModule="CheeseOn" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeViewController" id="AlF-ZS-eci" customClass="HomeViewController" customModule="CheeseOn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wMC-eX-QEK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -136,7 +146,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="circle" catalog="system" width="128" height="121"/>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
