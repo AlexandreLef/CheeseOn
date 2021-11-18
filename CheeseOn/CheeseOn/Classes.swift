@@ -5,7 +5,7 @@
 //  Created by Alexandre Lefebvre on 18/11/2021.
 //
 
-import Foundation
+import UIKit
 
 
 // User class
@@ -24,8 +24,22 @@ class User {
     }
     
     func registerUser(){    // Save the User in defaults
-        UserDefaults.standard.set(self.username, forKey: "UserName")  // Saving username
-        UserDefaults.standard.set(self.keepConnected, forKey: "KeepConneced")  // Saving is choice
+        UserDefaults.standard.set(self, forKey: "User")  // Saving user
     }
     
+}
+
+// Style
+class Style {
+    
+    let yellow: UIColor! = UIColor(red: 230, green: 195, blue: 89, alpha: 1)
+    let purple: UIColor! = UIColor(red: 155, green: 110, blue: 195, alpha: 1)
+    let white: UIColor! = UIColor.white
+    let black: UIColor! = UIColor.black
+    
+    let corp: UIFont! = UIFont(name: "Helvetica Neue", size: 12)
+    
+    init() {
+        
+    }
 }
