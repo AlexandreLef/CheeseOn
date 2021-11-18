@@ -17,6 +17,7 @@
 		03B7CFDC274635C800583026 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7CFDB274635C800583026 /* LogInViewController.swift */; };
 		03B7CFE02746385900583026 /* RecipeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7CFDF2746385900583026 /* RecipeDetailsViewController.swift */; };
 		03B7CFE22746387F00583026 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7CFE12746387F00583026 /* ProfileViewController.swift */; };
+		03B7CFE427465A5A00583026 /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7CFE327465A5A00583026 /* Classes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		03B7CFDB274635C800583026 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		03B7CFDF2746385900583026 /* RecipeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsViewController.swift; sourceTree = "<group>"; };
 		03B7CFE12746387F00583026 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		03B7CFE327465A5A00583026 /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				031529A62745500C00C30C43 /* Assets.xcassets */,
 				031529A82745500C00C30C43 /* LaunchScreen.storyboard */,
 				031529AB2745500C00C30C43 /* Info.plist */,
+				03B7CFE327465A5A00583026 /* Classes.swift */,
 			);
 			path = CheeseOn;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				031529A02745500A00C30C43 /* SceneDelegate.swift in Sources */,
 				03B7CFE22746387F00583026 /* ProfileViewController.swift in Sources */,
 				03B7CFDC274635C800583026 /* LogInViewController.swift in Sources */,
+				03B7CFE427465A5A00583026 /* Classes.swift in Sources */,
 				0352A494274560A0009F3A35 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
