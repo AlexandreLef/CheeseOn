@@ -12,6 +12,7 @@ class LogInViewController: UIViewController {
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var keepConnect: UIButton!
     @IBOutlet weak var connexion: UIButton!
+    @IBOutlet weak var test: UIImageView!
 
     var keepConnectStatus: Bool = false
     var style = Style()
@@ -21,11 +22,16 @@ class LogInViewController: UIViewController {
         // Do any additional setup after loading the view.
         let gesture = UITapGestureRecognizer(target: self, action: #selector(LogInViewController.home)) // Save the tap on button
         connexion.addGestureRecognizer(gesture) // Cast the gesture
-        
+        let gest = UITapGestureRecognizer(target: self, action: #selector(LogInViewController.changeColor)) // Save the tap on button
+        test.addGestureRecognizer(gest) // Cast the gesture
         
         connexion.layer.borderWidth = 7
         connexion.layer.borderColor = style.purple.cgColor
-        connexion.layer.cornerRadius = connexion.frame.size.height / 2 
+        connexion.layer.cornerRadius = connexion.frame.size.height / 2
+        
+        test.layer.cornerRadius = test.frame.size.height / 2
+        
+        keepConnect.tintColor = style.purple
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -47,10 +53,16 @@ class LogInViewController: UIViewController {
     @IBAction func checkKeepConnect() {
         keepConnectStatus = !keepConnectStatus
         if keepConnectStatus {
-            keepConnect.setImage(UIImage(systemName: "record.circle.fill"), for: .normal)
-        } else {
             keepConnect.setImage(UIImage(systemName: "circle.fill"), for: .normal)
+            keepConnect.tintColor = style.yellow
+        } else {
+            keepConnect.setImage(UIImage(systemName: "circle"), for: .normal)
+            keepConnect.tintColor = style.purple
         }
+    }
+    
+    @objc func changeColor() {
+        test.backgroundColor = style.yellow
     }
     
 }
