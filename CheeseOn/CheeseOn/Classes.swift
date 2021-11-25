@@ -32,8 +32,8 @@ class User {
 // Style
 class Style {
     
-    let yellow: UIColor! = UIColor(red: 230, green: 195, blue: 89, alpha: 1)
-    let purple: UIColor! = UIColor(red: 155, green: 110, blue: 195, alpha: 1)
+    let yellow: UIColor! = UIColor(red: 230/255, green: 195/255, blue: 89/255, alpha: 1)
+    let purple: UIColor! = UIColor(red: 155/255, green: 110/255, blue: 195/255, alpha: 1)
     let white: UIColor! = UIColor.white
     let black: UIColor! = UIColor.black
     
