@@ -16,6 +16,7 @@
 
     />
 
+    <!-- Logo picture -->
     <ImageView
         android:id="@+id/logo"
         android:layout_width="wrap_content"
@@ -40,29 +41,35 @@
 
     />
 
+    <!-- Username input -->
     <EditText
         android:id="@+id/userNameInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="7"
-        android:inputType="textPersonName"
-        android:text="Username"
-        android:textAlignment="center"
         android:background="@drawable/rounded_edittext"
+        android:ems="7"
+        android:fontFamily="@font/helveticaneue_light"
+
+        android:inputType="textPersonName"
+        android:hint="Username"
+        android:textAlignment="center"
+        android:textSize="@dimen/font_larger"
 
         app:layout_constraintBottom_toTopOf="@id/keepConnected"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/middleGuideline" />
 
+    <!-- Keep Connected button -->
     <androidx.appcompat.widget.AppCompatCheckBox
         android:id="@+id/keepConnected"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Rester connecté"
-
         android:button="@drawable/rounded_checkbox"
+        android:fontFamily="@font/helveticaneue_light"
+
         android:paddingLeft="5dp"
+        android:text="Rester connecté"
 
         app:layout_constraintStart_toStartOf="@id/userNameInput"
         app:layout_constraintTop_toBottomOf="@id/userNameInput" />
@@ -77,21 +84,26 @@
 
         />
 
-    <Button
+    <!-- Connexion button -->
+
+    <TextView
         android:id="@+id/btnConnexion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/rounded_textview"
+        android:ems="7"
+
+        android:fontFamily="@font/helveticaneue_light"
         android:text="Connexion"
-        android:textColor="@color/black"
+        android:textAlignment="center"
         android:textAllCaps="false"
-        android:background="@drawable/rounded_button"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_larger"
 
-        app:layout_constraintTop_toTopOf="@id/inputGuideline"
         app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-
-    />
+        app:layout_constraintStart_toStartOf="@id/userNameInput"
+        app:layout_constraintTop_toTopOf="@id/inputGuideline"
+        />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/bottomGuideline"

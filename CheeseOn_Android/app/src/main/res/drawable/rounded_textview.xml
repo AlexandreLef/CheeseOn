@@ -4,8 +4,7 @@
         android:width="2.5dp"
         android:color="@color/main_purple"
         />
-    <solid
-        android:color="@color/alpha100"
-        />
+    <solid android:color="@color/alpha100"/>
+    <padding android:paddingVertical="5dp"/>
     <corners android:radius="20dp"/>
 </shape>
