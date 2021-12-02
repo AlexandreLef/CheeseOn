@@ -7,40 +7,31 @@
 
 import UIKit
 
-class LogInViewController: UIViewController, UITextFieldDelegate {
+class LogInViewController: UIViewController {
     
     @IBOutlet weak var username: UITextField!
-    @IBOutlet weak var keepConnect: UILabel!
+    @IBOutlet weak var keepConnect: UIButton!
     @IBOutlet weak var connexion: UIButton!
-    @IBOutlet weak var radio: UIImageView!
+    @IBOutlet weak var test: UIImageView!
 
     var keepConnectStatus: Bool = false
     var style = Style()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         // Do any additional setup after loading the view.
         let gesture = UITapGestureRecognizer(target: self, action: #selector(LogInViewController.home)) // Save the tap on button
         connexion.addGestureRecognizer(gesture) // Cast the gesture
         let gest = UITapGestureRecognizer(target: self, action: #selector(LogInViewController.changeColor)) // Save the tap on button
-        radio.addGestureRecognizer(gest) // Cast the gesture
+        test.addGestureRecognizer(gest) // Cast the gesture
         
-        username.delegate = self
-        
-        connexion.layer.borderWidth = 4
+        connexion.layer.borderWidth = 7
         connexion.layer.borderColor = style.purple.cgColor
         connexion.layer.cornerRadius = connexion.frame.size.height / 2
-        connexion.titleLabel!.font = style.login
         
-        keepConnect.font = style.login
+        test.layer.cornerRadius = test.frame.size.height / 2
         
-        username.font = style.login
-        
-        radio.layer.cornerRadius = radio.frame.size.height / 2
-        radio.backgroundColor = style.transparent
-
+        keepConnect.tintColor = style.purple
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -58,33 +49,20 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         let user = User(userName: username.text!, keepConneced: keepConnectStatus)
         user.registerUser()
     }
+
+    @IBAction func checkKeepConnect() {
+        keepConnectStatus = !keepConnectStatus
+        if keepConnectStatus {
+            keepConnect.setImage(UIImage(systemName: "circle.fill"), for: .normal)
+            keepConnect.tintColor = style.yellow
+        } else {
+            keepConnect.setImage(UIImage(systemName: "circle"), for: .normal)
+            keepConnect.tintColor = style.purple
+        }
+    }
     
     @objc func changeColor() {
-        if radio.backgroundColor == style.transparent {
-            radio.backgroundColor = style.yellow
-            keepConnectStatus = true
-        } else {
-            radio.backgroundColor = style.transparent
-            keepConnectStatus = false
-        }
+        test.backgroundColor = style.yellow
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.view.endEditing(true)
-        username.resignFirstResponder()
-        return false
-    }
-    
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        if (textField.text?.count ?? 0) > 7 {
-            
-            if string == "" {
-                return true
-            }
-            
-            return false
-        }
-        
-        return true
-    }
 }
