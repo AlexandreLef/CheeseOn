@@ -1,0 +1,72 @@
+[
+    {
+        "image": "raclette",
+        "name": "Raclette",
+        "preparation": 30,
+        "cooking": 60,
+        "ingredients": [
+            "2kg Pomme de terre",
+            "1/2 Fromage à raclette",
+            "Charcuterie"
+        ],
+        "recipe": [
+            "Prendre le demi-fromage, racler la croute pour enlever la fine couche de surface (ne pas enlever la croute !!!).",
+            "Prendre un four à raclette, ou -si vous êtes en plein air- faire un feu et laisser venir la braise, avant de poser le demi-fromage sur un caillou plat.",
+            "Attendre que le fromage fonde et le faire glisser avec un couteau sur une assiette avec une pomme de terre.",
+            "N'oubliez pas de couper les bords du fromage fondu à mesure...cela se nomme des religieuses !"
+        ],
+        "category": "Salée"
+    },
+    {
+        "image": "fondue",
+        "name": "Fondue Savoyarde",
+        "preparation": 30,
+        "cooking": 15,
+        "ingredients": [
+            "2 verres de vin blanc",
+            "1 gousse d'ail",
+            "500g de beaufort",
+            "400g de comté",
+            "300g de tomme de Savoie",
+            "1/4 de reblochon (facultatif)",
+            "1 pain de campagne"
+        ],
+        "recipe": [
+            "Commencer par couper le pain en morceaux pour qu'il durcisse.",
+            "Couper le fromage en lamelles EN ENLEVANT LES CROÛTES.",
+            "Réserver le reblochon à part (il sera ajouté à la fin pour lier tous les fromages).",
+            "Frotter le caquelon avec la gousse d'ail jusqu'à usure de l'ail.",
+            "Mettre à chauffer le vin blanc (feux moyen), quand il mousse, baisser le feu et ajouter petit à petit les fromages en lamelles en remuant avec une cuillère en bois en faisant des \"8\".",
+            "Quand tout le fromage est fondu, ajouter le reblochon.",
+            "Allumer le réchaud et poser la fondue dessus, remuer de temps en temps avec la cuillère en bois, c'est prêt à déguster."
+        ],
+        "category": "Salée"
+    },
+    {
+        "image": "camembert",
+        "name": "Camembert rôti au four",
+        "preparation": 10,
+        "cooking": 10,
+        "ingredients": [
+            "3 c.à.s d'huile d'olive",
+            "1 pincée d'herbes de Provences",
+            "1 branche de thym",
+            "1 tomate",
+            "1 Camembert (si les ramequins sont petits, sinon prévoir 1 camembert par personne)",
+            "4 tranches de jambon Serrano",
+            "1 salade (jeunes pousses de préférence)",
+            "2 tranches de pain grillé"
+        ],
+        "recipe": [
+            "Positionner le pain grillé en petits morceaux au fond du plat.",
+            "Couper le camembert en deux, de façon à avoir deux disques.",
+            "En placer un sur le pain grillé.",
+            "Émincer le jambon et couper quelques petits morceaux de tomate (Quantités : selon votre convenance).",
+            "Ajouter les herbes de Provence, le thym, le jambon, la salade, la tomate et l'huile d'olive.",
+            "Recouvrir du deuxième disque de camembert.",
+            "Passer le tout 3 min au micro-ondes.",
+            "Enfourner à 190°C (thermostat 6-7) pendant 10-15 minutes et vérifier la cuisson, le camembert doit commencer à brunir et la crème à bouillir."
+        ],
+        "category": "Salée"
+    }
+]
