@@ -24,7 +24,8 @@ class User {
     }
     
     func registerUser(){    // Save the User in defaults
-        UserDefaults.standard.set(self, forKey: "User")  // Saving user
+        UserDefaults.standard.set(self.username, forKey: "Username")  // Saving username
+        UserDefaults.standard.set(self.keepConnected, forKey: "KeepConnected") // Saving user choice
     }
     
 }
