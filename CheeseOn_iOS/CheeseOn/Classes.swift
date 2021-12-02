@@ -29,6 +29,29 @@ class User {
     
 }
 
+// Recipe class
+class Recipe: Codable {
+    var image: String
+    var name: String
+//    var note: Float
+    var preparation: Int
+    var cooking: Int
+    var ingredients: [String]
+    var recipe: [String]
+    var category: String
+    
+    init(name: String, image: String, preparation: Int, cooking: Int, ingredients: [String], recipe: [String], category: String) {
+        self.name = name
+        self.image = image
+//        self.note = note
+        self.preparation = preparation
+        self.cooking = cooking
+        self.ingredients = ingredients
+        self.recipe = recipe
+        self.category = category
+    }
+}
+
 // Style
 class Style {
     
@@ -38,9 +61,10 @@ class Style {
     let purple_dark: UIColor = UIColor(red: 135/255, green: 91/255, blue: 178/255, alpha: 1)
     let white: UIColor! = UIColor.white
     let black: UIColor! = UIColor.black
+    let transparent: UIColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 0)
     
-    let corp: UIFont! = UIFont(name: "Helvetica Neue", size: 12)
-    
+    let corp: UIFont! = UIFont(name: "Helvetica Neue Light", size: 12)
+    let login: UIFont! = UIFont(name: "Helvetica Neue Light", size: 20)
     init() {
         
     }
@@ -67,7 +91,7 @@ class TextField: UITextField {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.layer.borderWidth = 7
+        self.layer.borderWidth = 4
         self.layer.borderColor = style.purple.cgColor
         self.layer.cornerRadius = self.frame.size.height / 2
     }
