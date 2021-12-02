@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6oj-J7-qwM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KBU-EA-aVj">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -122,7 +121,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" contentMode="center" semanticContentAttribute="forceLeftToRight" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="a4i-Qc-wxu">
-                                <rect key="frame" x="20" y="215" width="374" height="681"/>
+                                <rect key="frame" x="20" y="200" width="374" height="696"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="20" minimumInteritemSpacing="0.0" id="hf1-2j-TKj">
                                     <size key="itemSize" width="128" height="128"/>
@@ -185,11 +184,24 @@
                                 </connections>
                             </segmentedControl>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="YFu-tm-zEL">
-                                <rect key="frame" x="151" y="44" width="113" height="50"/>
+                                <rect key="frame" x="122" y="44" width="170" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="YFu-tm-zEL" secondAttribute="height" multiplier="113:50" id="pMu-hg-Sdc"/>
+                                    <constraint firstAttribute="width" secondItem="YFu-tm-zEL" secondAttribute="height" multiplier="170:75" id="pMu-hg-Sdc"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhH-d3-PFY">
+                                <rect key="frame" x="20" y="44" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lhH-d3-PFY" secondAttribute="height" multiplier="1:1" id="2Hq-Dx-saE"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" image="person" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="large" weight="light"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToProfile" destination="AlF-ZS-eci" eventType="touchUpInside" id="aog-3y-A0G"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gLw-ZX-STY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -198,16 +210,21 @@
                             <constraint firstItem="a4i-Qc-wxu" firstAttribute="leading" secondItem="gLw-ZX-STY" secondAttribute="leading" constant="20" id="3i8-Hm-SeV"/>
                             <constraint firstItem="gLw-ZX-STY" firstAttribute="trailing" secondItem="a4i-Qc-wxu" secondAttribute="trailing" constant="20" id="8qu-OE-bcZ"/>
                             <constraint firstItem="1k2-3k-oba" firstAttribute="centerX" secondItem="rUh-sc-6Xc" secondAttribute="centerX" id="JLq-e1-S2J"/>
-                            <constraint firstItem="1k2-3k-oba" firstAttribute="top" secondItem="YFu-tm-zEL" secondAttribute="bottom" constant="45" id="OlE-Qs-saQ"/>
-                            <constraint firstItem="a4i-Qc-wxu" firstAttribute="top" secondItem="1k2-3k-oba" secondAttribute="bottom" constant="45" id="aDM-Zs-heZ"/>
+                            <constraint firstItem="lhH-d3-PFY" firstAttribute="leading" secondItem="gLw-ZX-STY" secondAttribute="leading" constant="20" id="MSF-i4-zkp"/>
+                            <constraint firstItem="1k2-3k-oba" firstAttribute="top" secondItem="YFu-tm-zEL" secondAttribute="bottom" constant="20" id="OlE-Qs-saQ"/>
+                            <constraint firstItem="YFu-tm-zEL" firstAttribute="bottom" secondItem="lhH-d3-PFY" secondAttribute="bottom" id="S49-ZB-n6v"/>
+                            <constraint firstItem="a4i-Qc-wxu" firstAttribute="top" secondItem="1k2-3k-oba" secondAttribute="bottom" constant="30" id="aDM-Zs-heZ"/>
                             <constraint firstAttribute="bottom" secondItem="a4i-Qc-wxu" secondAttribute="bottom" id="aSd-y0-GTy"/>
                             <constraint firstItem="YFu-tm-zEL" firstAttribute="top" secondItem="gLw-ZX-STY" secondAttribute="top" id="dpm-zJ-2qY"/>
-                            <constraint firstItem="YFu-tm-zEL" firstAttribute="leading" secondItem="gLw-ZX-STY" secondAttribute="leading" constant="151" id="etq-Fo-L7d"/>
-                            <constraint firstItem="gLw-ZX-STY" firstAttribute="trailing" secondItem="YFu-tm-zEL" secondAttribute="trailing" constant="150" id="hdz-H7-ZZ5"/>
+                            <constraint firstItem="YFu-tm-zEL" firstAttribute="leading" secondItem="gLw-ZX-STY" secondAttribute="leading" constant="122" id="etq-Fo-L7d"/>
+                            <constraint firstItem="YFu-tm-zEL" firstAttribute="top" secondItem="lhH-d3-PFY" secondAttribute="top" id="fTm-sC-6JS"/>
+                            <constraint firstItem="gLw-ZX-STY" firstAttribute="trailing" secondItem="YFu-tm-zEL" secondAttribute="trailing" constant="122" id="hdz-H7-ZZ5"/>
+                            <constraint firstItem="YFu-tm-zEL" firstAttribute="centerY" secondItem="lhH-d3-PFY" secondAttribute="centerY" id="iBX-jP-wqe"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="categoryChoice" destination="1k2-3k-oba" id="dI9-Yi-rg0"/>
+                        <outlet property="profile" destination="lhH-d3-PFY" id="u9Y-L4-i04"/>
                         <outlet property="recipeCollectionView" destination="a4i-Qc-wxu" id="KIV-WY-Y0H"/>
                     </connections>
                 </viewController>
@@ -234,7 +251,7 @@
                                         <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="recipeImageCell" rowHeight="200" id="3Fd-eC-3BO" customClass="RecipeImageTableViewCell" customModule="CheeseOn" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="44.5" width="414" height="200"/>
+                                                <rect key="frame" x="0.0" y="24.5" width="414" height="200"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Fd-eC-3BO" id="oXL-56-www">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -261,7 +278,7 @@
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="recipeNameCell" id="ipM-uS-K20" customClass="RecipeNameTableViewCell" customModule="CheeseOn" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="244.5" width="414" height="47"/>
+                                                <rect key="frame" x="0.0" y="224.5" width="414" height="47"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ipM-uS-K20" id="Amp-eg-NTt">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="47"/>
@@ -290,7 +307,7 @@
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="recipeTimingCell" id="fHw-Xo-Ogi" userLabel="recipeTimingCell" customClass="RecipeTimingTableViewCell" customModule="CheeseOn" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="291.5" width="414" height="104"/>
+                                                <rect key="frame" x="0.0" y="271.5" width="414" height="104"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fHw-Xo-Ogi" id="eZE-yc-udO">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
@@ -374,7 +391,7 @@
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="recipeSubtitleCell" id="MdC-1X-MsV" userLabel="recipeSubtitleCell" customClass="RecipeSubtitleTableViewCell" customModule="CheeseOn" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="395.5" width="414" height="50.5"/>
+                                                <rect key="frame" x="0.0" y="375.5" width="414" height="50.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MdC-1X-MsV" id="GR8-CQ-Wj0">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="50.5"/>
@@ -400,7 +417,7 @@
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="recipeIngredientTableViewCell" id="GQY-dT-rC2" userLabel="recipeIngredientCell" customClass="RecipeIngredientTableViewCell" customModule="CheeseOn" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="446" width="414" height="26.5"/>
+                                                <rect key="frame" x="0.0" y="426" width="414" height="26.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GQY-dT-rC2" id="UYl-1T-0SQ">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="26.5"/>
@@ -427,21 +444,15 @@
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJy-xK-NfZ">
-                                        <rect key="frame" x="10" y="54" width="78" height="22"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="78" id="SOZ-GJ-dex"/>
-                                            <constraint firstAttribute="height" constant="22" id="f0s-Wx-zdx"/>
-                                        </constraints>
-                                        <color key="tintColor" systemColor="darkTextColor"/>
-                                        <state key="normal" title="Back" image="chevron.left" catalog="system">
-                                            <color key="titleColor" systemColor="darkTextColor"/>
-                                        </state>
-                                        <state key="highlighted">
-                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHz-OB-e9G" userLabel="Back">
+                                        <rect key="frame" x="20" y="44" width="20" height="27"/>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="chevron.left" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large" weight="black"/>
                                         </state>
                                         <connections>
-                                            <action selector="backAction" destination="hHU-Qm-c0D" eventType="touchUpInside" id="Ssy-wb-Zgv"/>
+                                            <action selector="backAction" destination="hHU-Qm-c0D" eventType="touchUpInside" id="8qw-ys-IMO"/>
+                                            <action selector="goBack" destination="6oj-J7-qwM" eventType="touchUpInside" id="4rB-VQ-euS"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -450,19 +461,21 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="EhI-1z-bN0" firstAttribute="top" secondItem="hIy-qy-L3M" secondAttribute="top" id="Iem-vT-1Sh"/>
-                                    <constraint firstItem="OJy-xK-NfZ" firstAttribute="leading" secondItem="YwW-RE-IIc" secondAttribute="leading" constant="10" id="LKg-ah-6ec"/>
+                                    <constraint firstItem="lHz-OB-e9G" firstAttribute="leading" secondItem="YwW-RE-IIc" secondAttribute="leading" constant="20" id="Wpt-Eg-PwF"/>
                                     <constraint firstItem="EhI-1z-bN0" firstAttribute="leading" secondItem="YwW-RE-IIc" secondAttribute="leading" id="aCU-mc-4ZI"/>
                                     <constraint firstItem="YwW-RE-IIc" firstAttribute="trailing" secondItem="EhI-1z-bN0" secondAttribute="trailing" id="jWa-2H-U4r"/>
                                     <constraint firstItem="YwW-RE-IIc" firstAttribute="bottom" secondItem="EhI-1z-bN0" secondAttribute="bottom" id="mFT-Ia-Y20"/>
-                                    <constraint firstItem="OJy-xK-NfZ" firstAttribute="top" secondItem="YwW-RE-IIc" secondAttribute="top" constant="10" id="nEg-to-rHT"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KAJ-LT-6vC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KAJ-LT-6vC" firstAttribute="top" secondItem="lHz-OB-e9G" secondAttribute="top" id="8Oy-kb-TRi"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="Back" destination="OJy-xK-NfZ" id="lU0-AN-c1Q"/>
+                        <outlet property="back" destination="lHz-OB-e9G" id="tbB-Gb-VC8"/>
                         <outlet property="recipeTableView" destination="EhI-1z-bN0" id="eFd-hf-JFB"/>
                     </connections>
                 </viewController>
@@ -521,10 +534,6 @@
                                             <imageReference key="image" image="power.circle.fill" catalog="system" symbolScale="large"/>
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="64" scale="default" weight="regular"/>
                                         </state>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <imageReference key="image" image="power.circle.fill" catalog="system" symbolScale="large"/>
-                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="64" scale="default" weight="regular"/>
-                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="disconnectButton" destination="6oj-J7-qwM" eventType="touchUpInside" id="8uT-li-wEb"/>
                                         </connections>
@@ -533,15 +542,12 @@
                                         <rect key="frame" x="107.5" y="302" width="199" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNO-Pt-ff1">
-                                                <rect key="frame" x="145.5" y="23" width="53.5" height="31"/>
+                                                <rect key="frame" x="181.5" y="23" width="17.5" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="31" id="ZLW-Xw-A1m"/>
                                                 </constraints>
                                                 <color key="tintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" image="pencil" catalog="system"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="pencil" catalog="system">
-                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="24"/>
-                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="openUsername" destination="6oj-J7-qwM" eventType="touchUpInside" id="YDg-hc-JdO"/>
                                                 </connections>
@@ -590,13 +596,9 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="En0-Sw-LmH">
-                                <rect key="frame" x="20" y="44" width="47" height="38"/>
+                                <rect key="frame" x="20" y="44" width="12" height="18"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="chevron.left" catalog="system"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <imageReference key="image" image="chevron.left" catalog="system" symbolScale="large"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="20" weight="black"/>
-                                </buttonConfiguration>
                                 <connections>
                                     <action selector="goBack" destination="6oj-J7-qwM" eventType="touchUpInside" id="y4C-Gs-AAj"/>
                                 </connections>
@@ -631,16 +633,14 @@
         <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="circle" catalog="system" width="128" height="121"/>
         <image name="clock" catalog="system" width="128" height="121"/>
-        <image name="hourglass" catalog="system" width="102" height="128"/>
+        <image name="hourglass" catalog="system" width="109" height="128"/>
         <image name="logo" width="4096" height="1714"/>
         <image name="moon.fill" catalog="system" width="128" height="121"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="power.circle.fill" catalog="system" width="128" height="121"/>
         <image name="sun.max.fill" catalog="system" width="128" height="124"/>
-        <systemColor name="darkTextColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -9,16 +9,19 @@ import UIKit
 
 class RecipeDetailsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var Back: UIButton!
+    @IBOutlet weak var back: UIButton!
     @IBOutlet weak var recipeTableView: UITableView!
     
     var recipe: Recipe?
+    var style = Style()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.recipeTableView.delegate = self
         self.recipeTableView.dataSource = self
+        back.tintColor = style.purple
+        
 
         if recipe != nil {
             DispatchQueue.main.async {

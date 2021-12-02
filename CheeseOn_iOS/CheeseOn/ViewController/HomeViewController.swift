@@ -15,6 +15,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     @IBOutlet weak var recipeCollectionView: UICollectionView!
     @IBOutlet weak var categoryChoice: UISegmentedControl!
+    @IBOutlet weak var profile: UIButton!
     
     
     override func viewDidLoad() {
@@ -24,6 +25,8 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         self.loadRecipes()
         
         recipes = allRecipes
+        
+        profile.tintColor = style.purple
         
         recipeCollectionView.delegate = self
         recipeCollectionView.dataSource = self
@@ -77,6 +80,12 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
                 self.recipeCollectionView.reloadData()// reload the datasof the collection view
             }
         }
+    }
+    
+    @IBAction func goToProfile() {
+        let storyboard = UIStoryboard(name: "Main" , bundle: nil)
+        let profileViewController = storyboard.instantiateViewController(withIdentifier:"profileViewController")as! ProfileViewController
+        self.navigationController?.pushViewController(profileViewController, animated:true) // Push the Home page
     }
     
 
