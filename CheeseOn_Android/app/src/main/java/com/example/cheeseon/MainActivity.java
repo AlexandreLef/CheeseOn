@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent home = new Intent(getApplicationContext(), HomeActivity.class);
+                home.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                 startActivity(home);
             }
         });

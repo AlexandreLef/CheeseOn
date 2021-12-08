@@ -22,6 +22,7 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent home = new Intent(getApplicationContext(), HomeActivity.class);
+                home.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                 startActivity(home);
             }
         });
@@ -30,6 +31,7 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent login = new Intent(getApplicationContext(), MainActivity.class);
+                login.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
                 startActivity(login);
             }
         });
