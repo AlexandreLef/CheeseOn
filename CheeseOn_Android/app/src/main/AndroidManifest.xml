@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CheeseOn">
         <activity
-            android:name=".Home"
+            android:name=".HomeActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
