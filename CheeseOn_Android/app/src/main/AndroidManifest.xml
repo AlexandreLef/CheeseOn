@@ -10,7 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CheeseOn">
         <activity
+<<<<<<< HEAD
             android:name=".Home"
+=======
+            android:name=".ProfileActivity"
+>>>>>>> android-Quentin
             android:exported="false" />
         <activity
             android:name=".MainActivity"
