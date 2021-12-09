@@ -25,6 +25,7 @@
 		03B7CFE02746385900583026 /* RecipeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7CFDF2746385900583026 /* RecipeDetailsViewController.swift */; };
 		03B7CFE22746387F00583026 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7CFE12746387F00583026 /* ProfileViewController.swift */; };
 		03B7CFE427465A5A00583026 /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7CFE327465A5A00583026 /* Classes.swift */; };
+		11592E18276287C30098A17D /* RecipeDetailsViewController.swift.old in Sources */ = {isa = PBXBuildFile; fileRef = 11592E17276287C30098A17D /* RecipeDetailsViewController.swift.old */; };
 		66BE859E2757C6F300F1CE2E /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BE859D2757C6F300F1CE2E /* Singleton.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		03B7CFDF2746385900583026 /* RecipeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsViewController.swift; sourceTree = "<group>"; };
 		03B7CFE12746387F00583026 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		03B7CFE327465A5A00583026 /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
+		11592E17276287C30098A17D /* RecipeDetailsViewController.swift.old */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RecipeDetailsViewController.swift.old; sourceTree = "<group>"; };
 		66BE859D2757C6F300F1CE2E /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +103,7 @@
 		0352A495274560CB009F3A35 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				11592E17276287C30098A17D /* RecipeDetailsViewController.swift.old */,
 				0352A492274560A0009F3A35 /* HomeViewController.swift */,
 				03B7CFE12746387F00583026 /* ProfileViewController.swift */,
 				03B7CFDF2746385900583026 /* RecipeDetailsViewController.swift */,
@@ -208,6 +211,7 @@
 				038544312758FA4A0067E183 /* RecipeCollectionViewCell.swift in Sources */,
 				0352A494274560A0009F3A35 /* HomeViewController.swift in Sources */,
 				0385442D2758F8200067E183 /* RecipeImageTableViewCell.swift in Sources */,
+				11592E18276287C30098A17D /* RecipeDetailsViewController.swift.old in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +365,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = CheeseOn.CheeseOn;
+				PRODUCT_BUNDLE_IDENTIFIER = CheeseOn.iMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -380,7 +384,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = CheeseOn.CheeseOn;
+				PRODUCT_BUNDLE_IDENTIFIER = CheeseOn.iMac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

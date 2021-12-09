@@ -8,6 +8,8 @@
 import UIKit
 
 class RecipeTimingTableViewCell: UITableViewCell {
+    
+    var style = Style()
 
     @IBOutlet weak var preparationTime: UILabel!
     @IBOutlet weak var cookingTime: UILabel!
@@ -20,6 +22,8 @@ class RecipeTimingTableViewCell: UITableViewCell {
     func configure(preparation: Int, cooking: Int) {
         self.preparationTime?.text = " \(preparation) min"  //change le text du label avec le .text
         self.cookingTime?.text = " \(cooking) min"
+        preparationTime.font = style.corp
+        cookingTime.font = style.corp
     }
 
 }

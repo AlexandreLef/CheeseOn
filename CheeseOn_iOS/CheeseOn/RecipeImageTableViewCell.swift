@@ -8,6 +8,8 @@
 import UIKit
 
 class RecipeImageTableViewCell: UITableViewCell {
+    
+    var style = Style()
 
     @IBOutlet weak var recipeImage: UIImageView!
     
@@ -24,6 +26,11 @@ class RecipeImageTableViewCell: UITableViewCell {
     func configure(_ imageName: String) {
         self.imageName = imageName
         recipeImage?.image = UIImage(named: imageName)
+        recipeImage.layer.masksToBounds = true
+        recipeImage.layer.borderWidth = 7
+        recipeImage.layer.borderColor = style.yellow.cgColor
+        recipeImage.layer.cornerRadius = recipeImage.frame.size.height / 8
+        recipeImage.backgroundColor = style.yellow
     }
 
 }

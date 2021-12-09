@@ -9,6 +9,8 @@
 import UIKit
 
 class RecipeIngredientTableViewCell: UITableViewCell {
+    
+    var style = Style()
 
     @IBOutlet weak var ingredientLabel: UILabel!
     
@@ -19,6 +21,7 @@ class RecipeIngredientTableViewCell: UITableViewCell {
     
     func configure(_ ingredient: String?) {
         self.ingredientLabel?.text = ingredient
+        ingredientLabel.font = style.corp
     }
 
 }
