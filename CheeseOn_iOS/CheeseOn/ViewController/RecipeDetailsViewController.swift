@@ -30,6 +30,11 @@ class RecipeDetailsViewController: UIViewController, UITableViewDelegate, UITabl
         }// if recipe ≠ null take image,name and times from recipe
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        overrideUserInterfaceStyle = Singleton.sharedInstance.colorTheme
+    }
+    
     func configure(recipe: Recipe) {
         self.recipe = recipe
         DispatchQueue.main.async {

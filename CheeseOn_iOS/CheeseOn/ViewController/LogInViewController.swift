@@ -46,6 +46,7 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated) // Remove the navigation bar on the view
+        overrideUserInterfaceStyle = Singleton.sharedInstance.colorTheme
     }
         
     @objc func home() {     // Change page to Home page
