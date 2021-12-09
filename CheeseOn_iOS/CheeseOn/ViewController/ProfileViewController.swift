@@ -23,10 +23,18 @@ class ProfileViewController: UIViewController,
     var style = Style()
     var user = UserDefaults.standard.string(forKey: "Username")
 
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         overrideUserInterfaceStyle = Singleton.sharedInstance.colorTheme
+        
+        if Singleton.sharedInstance.colorTheme == .dark {
+            toggle.backgroundColor = style.purple
+            toggle.selectedSegmentIndex = 1
+        } else {
+            toggle.backgroundColor = style.yellow
+            toggle.selectedSegmentIndex = 0
+        }
     }
     
     override func viewDidLoad() {
@@ -78,17 +86,14 @@ class ProfileViewController: UIViewController,
     
     // Segmented control that change color theme
     @IBAction func changeTheme() {
-        print(Singleton.sharedInstance.colorTheme.rawValue)
         if toggle.backgroundColor == style.yellow {
             toggle.backgroundColor = style.purple
             
-            Singleton.sharedInstance.colorTheme = .dark
+            Singleton.sharedInstance.changeTheme(theme: .dark)
             overrideUserInterfaceStyle = Singleton.sharedInstance.colorTheme
-            
         } else {
             toggle.backgroundColor = style.yellow
-            
-            Singleton.sharedInstance.colorTheme = .light
+            Singleton.sharedInstance.changeTheme(theme: .light)
             overrideUserInterfaceStyle = Singleton.sharedInstance.colorTheme
         }
     }

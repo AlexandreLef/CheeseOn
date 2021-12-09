@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KBU-EA-aVj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KBU-EA-aVj">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -86,7 +87,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="x2i-kw-JRc"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="x2i-kw-JRc" firstAttribute="trailing" secondItem="ex8-I1-qwB" secondAttribute="trailing" constant="30" id="56k-Ks-LNM"/>
@@ -204,7 +205,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gLw-ZX-STY"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="a4i-Qc-wxu" firstAttribute="leading" secondItem="gLw-ZX-STY" secondAttribute="leading" constant="20" id="3i8-Hm-SeV"/>
@@ -251,7 +252,7 @@
                                         <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="recipeImageCell" rowHeight="200" id="3Fd-eC-3BO" customClass="RecipeImageTableViewCell" customModule="CheeseOn" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="24.5" width="414" height="200"/>
+                                                <rect key="frame" x="0.0" y="44.5" width="414" height="200"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Fd-eC-3BO" id="oXL-56-www">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
@@ -278,7 +279,7 @@
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="recipeNameCell" id="ipM-uS-K20" customClass="RecipeNameTableViewCell" customModule="CheeseOn" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="224.5" width="414" height="47"/>
+                                                <rect key="frame" x="0.0" y="244.5" width="414" height="47"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ipM-uS-K20" id="Amp-eg-NTt">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="47"/>
@@ -307,7 +308,7 @@
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="recipeTimingCell" id="fHw-Xo-Ogi" userLabel="recipeTimingCell" customClass="RecipeTimingTableViewCell" customModule="CheeseOn" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="271.5" width="414" height="104"/>
+                                                <rect key="frame" x="0.0" y="291.5" width="414" height="104"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fHw-Xo-Ogi" id="eZE-yc-udO">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
@@ -391,7 +392,7 @@
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="recipeSubtitleCell" id="MdC-1X-MsV" userLabel="recipeSubtitleCell" customClass="RecipeSubtitleTableViewCell" customModule="CheeseOn" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="375.5" width="414" height="50.5"/>
+                                                <rect key="frame" x="0.0" y="395.5" width="414" height="50.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MdC-1X-MsV" id="GR8-CQ-Wj0">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="50.5"/>
@@ -417,7 +418,7 @@
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="recipeIngredientTableViewCell" id="GQY-dT-rC2" userLabel="recipeIngredientCell" customClass="RecipeIngredientTableViewCell" customModule="CheeseOn" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="426" width="414" height="26.5"/>
+                                                <rect key="frame" x="0.0" y="446" width="414" height="26.5"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GQY-dT-rC2" id="UYl-1T-0SQ">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="26.5"/>
@@ -445,7 +446,7 @@
                                         </prototypes>
                                     </tableView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHz-OB-e9G" userLabel="Back">
-                                        <rect key="frame" x="20" y="44" width="20" height="27"/>
+                                        <rect key="frame" x="20" y="44" width="23" height="29"/>
                                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" image="chevron.left" catalog="system">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large" weight="black"/>
@@ -457,7 +458,7 @@
                                     </button>
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="YwW-RE-IIc"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="EhI-1z-bN0" firstAttribute="top" secondItem="hIy-qy-L3M" secondAttribute="top" id="Iem-vT-1Sh"/>
@@ -523,31 +524,18 @@
                                             <action selector="changeTheme" destination="6oj-J7-qwM" eventType="valueChanged" id="5OK-gf-QCk"/>
                                         </connections>
                                     </segmentedControl>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xX-lL-I5B">
-                                        <rect key="frame" x="149" y="598" width="116.5" height="64"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="116.5" id="2C2-cl-8sh"/>
-                                            <constraint firstAttribute="height" constant="64" id="Xa8-To-XHq"/>
-                                        </constraints>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal">
-                                            <imageReference key="image" image="power.circle.fill" catalog="system" symbolScale="large"/>
-                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="64" scale="default" weight="regular"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="disconnectButton" destination="6oj-J7-qwM" eventType="touchUpInside" id="8uT-li-wEb"/>
-                                        </connections>
-                                    </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYP-rh-uBs">
                                         <rect key="frame" x="107.5" y="302" width="199" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNO-Pt-ff1">
-                                                <rect key="frame" x="181.5" y="23" width="17.5" height="31"/>
+                                                <rect key="frame" x="167.5" y="23" width="31.5" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="31" id="ZLW-Xw-A1m"/>
                                                 </constraints>
                                                 <color key="tintColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" image="pencil" catalog="system"/>
+                                                <state key="normal" image="pencil" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large" weight="black"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="openUsername" destination="6oj-J7-qwM" eventType="touchUpInside" id="YDg-hc-JdO"/>
                                                 </connections>
@@ -580,15 +568,29 @@
                                             <action selector="changeProfilPicture" destination="6oj-J7-qwM" eventType="touchUpInside" id="Bqg-1y-eY1"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xX-lL-I5B">
+                                        <rect key="frame" x="148.5" y="545" width="117" height="117"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="117" id="2C2-cl-8sh"/>
+                                            <constraint firstAttribute="height" constant="117" id="Xa8-To-XHq"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="power.circle.fill" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="64" scale="default" weight="regular"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="disconnectButton" destination="6oj-J7-qwM" eventType="touchUpInside" id="8uT-li-wEb"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="3xX-lL-I5B" firstAttribute="centerX" secondItem="WrI-sc-YP5" secondAttribute="centerX" id="Bou-2V-RQi"/>
                                     <constraint firstItem="Xx8-Ci-nvZ" firstAttribute="top" secondItem="fYP-rh-uBs" secondAttribute="bottom" constant="32" id="PHe-nf-2lh"/>
                                     <constraint firstItem="FRh-cB-QGk" firstAttribute="centerX" secondItem="WrI-sc-YP5" secondAttribute="centerX" id="QXM-za-CxE"/>
-                                    <constraint firstItem="3xX-lL-I5B" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Xx8-Ci-nvZ" secondAttribute="bottom" constant="20" id="crb-SQ-3Tb"/>
                                     <constraint firstItem="fYP-rh-uBs" firstAttribute="centerX" secondItem="WrI-sc-YP5" secondAttribute="centerX" id="cxC-39-gK6"/>
-                                    <constraint firstItem="3xX-lL-I5B" firstAttribute="top" secondItem="Xx8-Ci-nvZ" secondAttribute="bottom" constant="153" id="gyP-fH-sVR"/>
+                                    <constraint firstItem="3xX-lL-I5B" firstAttribute="top" secondItem="Xx8-Ci-nvZ" secondAttribute="bottom" constant="100" id="gyP-fH-sVR"/>
                                     <constraint firstItem="FRh-cB-QGk" firstAttribute="top" secondItem="WrI-sc-YP5" secondAttribute="top" id="iAK-RA-2GG"/>
                                     <constraint firstItem="fYP-rh-uBs" firstAttribute="top" secondItem="FRh-cB-QGk" secondAttribute="bottom" constant="46" id="iAr-Zh-QpO"/>
                                     <constraint firstItem="Xx8-Ci-nvZ" firstAttribute="centerX" secondItem="WrI-sc-YP5" secondAttribute="centerX" id="l7H-tE-7sG"/>
@@ -596,9 +598,11 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="En0-Sw-LmH">
-                                <rect key="frame" x="20" y="44" width="12" height="18"/>
+                                <rect key="frame" x="20" y="44" width="23" height="29"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="chevron.left" catalog="system"/>
+                                <state key="normal" image="chevron.left" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large" weight="black"/>
+                                </state>
                                 <connections>
                                     <action selector="goBack" destination="6oj-J7-qwM" eventType="touchUpInside" id="y4C-Gs-AAj"/>
                                 </connections>
@@ -633,7 +637,7 @@
         <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="circle" catalog="system" width="128" height="121"/>
         <image name="clock" catalog="system" width="128" height="121"/>
-        <image name="hourglass" catalog="system" width="109" height="128"/>
+        <image name="hourglass" catalog="system" width="102" height="128"/>
         <image name="logo" width="4096" height="1714"/>
         <image name="moon.fill" catalog="system" width="128" height="121"/>
         <image name="pencil" catalog="system" width="128" height="113"/>

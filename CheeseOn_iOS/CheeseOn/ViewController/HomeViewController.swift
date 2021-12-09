@@ -30,7 +30,13 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         recipeCollectionView.delegate = self
         recipeCollectionView.dataSource = self
+        
   }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        overrideUserInterfaceStyle = Singleton.sharedInstance.colorTheme
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return recipes?.count ?? 0

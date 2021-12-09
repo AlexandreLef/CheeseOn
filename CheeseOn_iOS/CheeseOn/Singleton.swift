@@ -16,5 +16,6 @@ public class Singleton {
     
     public func changeTheme(theme: UIUserInterfaceStyle){
         colorTheme = theme
+        print(theme)
     }
 }
