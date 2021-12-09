@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.GridLayoutManager;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,9 +15,10 @@ import android.widget.TextView;
 
 import com.example.cheeseon.databinding.ActivityHomeBinding;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity implements OnrecipeClick {
 
     private ActivityHomeBinding mBinding;
+    private RecipeAdapter mAdapter ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +64,11 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(profile);
             }
         });
+
+        mAdapter = new RecipeAdapter(this);
+        mBinding.recipeGrid.setLayoutManager(new GridLayoutManager(getApplicationContext(), 2));
+        mBinding.recipeGrid.setAdapter(mAdapter);
+        mAdapter.FillArray();
 
         setContentView(v);
     }

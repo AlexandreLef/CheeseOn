@@ -29,7 +29,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
 
-    />
+        android:contentDescription="CheeseOn logo" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/middleGuideline"
@@ -68,8 +68,8 @@
         android:button="@drawable/rounded_checkbox"
         android:fontFamily="@font/helveticaneue_light"
 
-        android:paddingLeft="5dp"
-        android:text="Rester connecté"
+        android:paddingStart="5dp"
+        android:text="@string/rester_connect"
 
         app:layout_constraintStart_toStartOf="@id/userNameInput"
         app:layout_constraintTop_toBottomOf="@id/userNameInput" />
@@ -94,7 +94,7 @@
         android:ems="7"
 
         android:fontFamily="@font/helveticaneue_light"
-        android:text="Connexion"
+        android:text="@string/connexion"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/black"
