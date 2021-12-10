@@ -21,10 +21,11 @@ class ProfileViewController: UIViewController,
     @IBOutlet weak var disconnect: UIButton!
     
     var style = Style()
-    var user = UserDefaults.standard.string(forKey: "Username")
+    var user: String?
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         
         overrideUserInterfaceStyle = Singleton.sharedInstance.colorTheme
         
@@ -50,6 +51,7 @@ class ProfileViewController: UIViewController,
         toggle.backgroundColor = style.yellow
         disconnect.tintColor = style.purple
         
+        user = UserDefaults.standard.string(forKey: "Username")
         if (user == nil) {
             username.text = "Anonyme"
         } else {
