@@ -1,7 +1,8 @@
 package com.example.cheeseon;
 
 import android.content.Context;
-import android.util.Log;
+import android.content.res.Resources;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,9 +12,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.cheeseon.databinding.ActivityRecipeLayoutBinding;
 import com.google.gson.Gson;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -43,7 +41,6 @@ public class RecipeAdapter extends RecyclerView.Adapter {
             builder.append(line);
         }
         line = builder.toString();
-//
         BaseRecipe baseRecipe = new Gson().fromJson(line, BaseRecipe.class);
         arrayToShow.addAll(baseRecipe.getRecipes());
         notifyDataSetChanged();
@@ -59,14 +56,12 @@ public class RecipeAdapter extends RecyclerView.Adapter {
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         ActivityRecipeLayoutBinding binding = ActivityRecipeLayoutBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false);
         return new RecipeAdapter.ItemViewHolder(binding);
-
     }
 
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
         ((ItemViewHolder)holder).bindTo(arrayToShow.get(position), position);
-
     }
 
     @Override
@@ -85,6 +80,11 @@ public class RecipeAdapter extends RecyclerView.Adapter {
 
             if (item != null) {
                 mBinding.recipeTitle.setText(item.getName());
+                Resources resources = context.getResources();
+                final int resourceId = resources.getIdentifier(item.getImage(),
+                        "drawable", context.getPackageName());
+
+                mBinding.recipeImage.setImageResource(resourceId);
                 mBinding.recipeImage.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {

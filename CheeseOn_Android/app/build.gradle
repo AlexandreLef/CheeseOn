@@ -44,4 +44,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation "com.squareup.retrofit2:retrofit"
     implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
 }

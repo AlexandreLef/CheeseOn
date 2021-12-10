@@ -14,11 +14,13 @@ import android.widget.Switch;
 import android.widget.TextView;
 
 import com.example.cheeseon.databinding.ActivityHomeBinding;
+import com.google.gson.Gson;
 
 public class HomeActivity extends AppCompatActivity implements OnitemClick {
 
     private ActivityHomeBinding mBinding;
     private RecipeAdapter mAdapter ;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +69,7 @@ public class HomeActivity extends AppCompatActivity implements OnitemClick {
 
         mAdapter = new RecipeAdapter(this, this);
         mBinding.recipeGrid.setLayoutManager(new GridLayoutManager(getApplicationContext(), 2));
+
         mBinding.recipeGrid.setAdapter(mAdapter);
         mAdapter.FillArray();
 
@@ -76,6 +79,9 @@ public class HomeActivity extends AppCompatActivity implements OnitemClick {
 
     @Override
     public void onitemClick(Recipe r) {
-
+        Intent recipeIntent = new Intent(getApplicationContext(), RecipeActivity.class);
+        recipeIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        recipeIntent.putExtra("recipe_clicked", new Gson().toJson(r));
+        startActivity(recipeIntent);
     }
 }

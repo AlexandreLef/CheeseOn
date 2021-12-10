@@ -1,16 +1,18 @@
 package com.example.cheeseon;
 
+import java.util.List;
+
 public class Recipe {
 
     private String name;
     private String image ;
     private Integer preparation;
     private Integer cooking;
-    private String[] ingredients;
-    private String[] recipe;
+    private List<String> ingredients;
+    private List<String> recipe;
     private String category;
 
-    Recipe(String name, String image, Integer preparation,Integer cooking, String[] ingredients, String[] recipe, String category) {
+    Recipe(String name, String image, Integer preparation,Integer cooking, List<String> ingredients, List<String> recipe, String category) {
         this.name = name;
         this.image = image;
         this.preparation = preparation;
@@ -44,18 +46,23 @@ public class Recipe {
     public void setCooking(Integer cooking) {
         this.cooking = cooking;
     }
-    public String[] getIngredients() {
+
+    public List<String> getIngredients() {
         return ingredients;
     }
-    public void setIngredients(String[] ingredients) {
+
+    public void setIngredients(List<String> ingredients) {
         this.ingredients = ingredients;
     }
-    public String[] getRecipe() {
+
+    public List<String> getRecipe() {
         return recipe;
     }
-    public void setRecipe(String[] recipe) {
+
+    public void setRecipe(List<String> recipe) {
         this.recipe = recipe;
     }
+
     public String getCategory() {
         return category;
     }
