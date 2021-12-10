@@ -38,7 +38,8 @@
             android:id="@+id/recipeImageCell"
             android:layout_width="350dp"
             android:layout_height="200dp"
-            android:background="@color/main_purple"
+            android:background="@color/main_yellow"
+            android:padding="1dp"
             android:layout_gravity="center_horizontal"
             android:src="@drawable/logo" />
 
