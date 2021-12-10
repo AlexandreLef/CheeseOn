@@ -26,6 +26,8 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         recipes = allRecipes
         
+        recipes = allRecipes.filter({$0.category == "Salée"}) // filter datas
+        
         profile.tintColor = style.purple
         
         recipeCollectionView.delegate = self
