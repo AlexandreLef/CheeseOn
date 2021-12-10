@@ -1,38 +1,63 @@
 package com.example.cheeseon;
 
+import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.proximities.myapplication.databinding.RecipeLayoutBinding;
+import com.example.cheeseon.databinding.ActivityRecipeLayoutBinding;
+import com.google.gson.Gson;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecipeAdapter {
-    private List<String> arrayToShow = new ArrayList<>();
+public class RecipeAdapter extends RecyclerView.Adapter {
+    private List<Recipe> arrayToShow = new ArrayList<>();
     private OnitemClick mCallback;
+    private Context context ;
+
 
     public void FillArray() {
-        this.arrayToShow.add("nom 1");
-        this.arrayToShow.add("nom 2");
-        this.arrayToShow.add("nom 3");
-        this.arrayToShow.add("nom 4");
+        StringBuilder builder = new StringBuilder();
+        InputStream content =  context.getResources().openRawResource(R.raw.recipes_list) ;
+        BufferedReader reader = new BufferedReader(new InputStreamReader(content));
+        String line = "";
+
+        while (true) {
+            try {
+                if (!((line = reader.readLine()) != null)) break;
+            } catch (IOException ioException) {
+                ioException.printStackTrace();
+            }
+            builder.append(line);
+        }
+        line = builder.toString();
+//
+        BaseRecipe baseRecipe = new Gson().fromJson(line, BaseRecipe.class);
+        arrayToShow.addAll(baseRecipe.getRecipes());
         notifyDataSetChanged();
     }
 
-    public RecipeAdapter(OnitemClick mCallback) {
+    public RecipeAdapter(OnitemClick mCallback,Context context) {
         this.mCallback = mCallback;
+        this.context = context;
     }
 
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        RecipeLayoutBinding binding = RecipeLayoutBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false);
+        ActivityRecipeLayoutBinding binding = ActivityRecipeLayoutBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false);
         return new RecipeAdapter.ItemViewHolder(binding);
 
     }
@@ -50,20 +75,20 @@ public class RecipeAdapter {
     }
 
     class ItemViewHolder extends RecyclerView.ViewHolder {
-        public RecipeLayoutBinding mBinding;
+        public ActivityRecipeLayoutBinding mBinding;
 
-        ItemViewHolder(RecipeLayoutBinding binding) {
+        ItemViewHolder(ActivityRecipeLayoutBinding binding) {
             super(binding.getRoot());
             mBinding = binding;
         }
-        void bindTo(final String item, int position) {
+        void bindTo(Recipe item, int position) {
 
             if (item != null) {
-                mBinding.tvItem.setText(item);
-                mBinding.tvItem.setOnClickListener(new View.OnClickListener() {
+                mBinding.recipeTitle.setText(item.getName());
+                mBinding.recipeImage.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        mCallback.onItemClick(item);
+                        mCallback.onitemClick(item);
                     }
                 });
             }

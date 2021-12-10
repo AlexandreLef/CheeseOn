@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 import com.example.cheeseon.databinding.ActivityHomeBinding;
 
-public class HomeActivity extends AppCompatActivity implements OnrecipeClick {
+public class HomeActivity extends AppCompatActivity implements OnitemClick {
 
     private ActivityHomeBinding mBinding;
     private RecipeAdapter mAdapter ;
@@ -65,11 +65,16 @@ public class HomeActivity extends AppCompatActivity implements OnrecipeClick {
             }
         });
 
-        mAdapter = new RecipeAdapter(this);
+        mAdapter = new RecipeAdapter(this, this);
         mBinding.recipeGrid.setLayoutManager(new GridLayoutManager(getApplicationContext(), 2));
         mBinding.recipeGrid.setAdapter(mAdapter);
         mAdapter.FillArray();
 
         setContentView(v);
+    }
+
+    @Override
+    public void onitemClick(Recipe r) {
+
     }
 }

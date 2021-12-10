@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CheeseOn">
         <activity
-            android:name=".RecipeLayout"
-            android:exported="false" />
-        <activity
             android:name=".ProfileActivity"
             android:exported="true" />
         <activity

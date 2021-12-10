@@ -2,4 +2,5 @@
     <string name="app_name">CheeseOn</string>
     <string name="rester_connect">Rester connecté</string>
     <string name="connexion">Connexion</string>
+    <string name="recipe_image">Recipe image</string>
 </resources>
