@@ -1,0 +1,190 @@
+[
+  {
+    "image": "raclette",
+    "name": "Raclette",
+    "preparation": 30,
+    "cooking": 60,
+    "ingredients": [
+      "2kg Pomme de terre",
+      "1/2 Fromage à raclette",
+      "Charcuterie"
+    ],
+    "recipe": [
+      "Prendre le demi-fromage, racler la croute pour enlever la fine couche de surface (ne pas enlever la croute !!!).",
+      "Prendre un four à raclette, ou -si vous êtes en plein air- faire un feu et laisser venir la braise, avant de poser le demi-fromage sur un caillou plat.",
+      "Attendre que le fromage fonde et le faire glisser avec un couteau sur une assiette avec une pomme de terre.",
+      "N'oubliez pas de couper les bords du fromage fondu à mesure...cela se nomme des religieuses !"
+    ],
+    "category": "Salée"
+  },
+  {
+    "image": "fondue",
+    "name": "Fondue Savoyarde",
+    "preparation": 30,
+    "cooking": 15,
+    "ingredients": [
+      "2 verres de vin blanc",
+      "1 gousse d'ail",
+      "500g de beaufort",
+      "400g de comté",
+      "300g de tomme de Savoie",
+      "1/4 de reblochon (facultatif)",
+      "1 pain de campagne"
+    ],
+    "recipe": [
+      "Commencer par couper le pain en morceaux pour qu'il durcisse.",
+      "Couper le fromage en lamelles EN ENLEVANT LES CROÛTES.",
+      "Réserver le reblochon à part (il sera ajouté à la fin pour lier tous les fromages).",
+      "Frotter le caquelon avec la gousse d'ail jusqu'à usure de l'ail.",
+      "Mettre à chauffer le vin blanc (feux moyen), quand il mousse, baisser le feu et ajouter petit à petit les fromages en lamelles en remuant avec une cuillère en bois en faisant des \"8\".",
+      "Quand tout le fromage est fondu, ajouter le reblochon.",
+      "Allumer le réchaud et poser la fondue dessus, remuer de temps en temps avec la cuillère en bois, c'est prêt à déguster."
+    ],
+    "category": "Salée"
+  },
+  {
+    "image": "camembert",
+    "name": "Camembert rôti au four",
+    "preparation": 10,
+    "cooking": 10,
+    "ingredients": [
+      "3 c.à.s d'huile d'olive",
+      "1 pincée d'herbes de Provences",
+      "1 branche de thym",
+      "1 tomate",
+      "1 Camembert (si les ramequins sont petits, sinon prévoir 1 camembert par personne)",
+      "4 tranches de jambon Serrano",
+      "1 salade (jeunes pousses de préférence)",
+      "2 tranches de pain grillé"
+    ],
+    "recipe": [
+      "Positionner le pain grillé en petits morceaux au fond du plat.",
+      "Couper le camembert en deux, de façon à avoir deux disques.",
+      "En placer un sur le pain grillé.",
+      "Émincer le jambon et couper quelques petits morceaux de tomate (Quantités : selon votre convenance).",
+      "Ajouter les herbes de Provence, le thym, le jambon, la salade, la tomate et l'huile d'olive.",
+      "Recouvrir du deuxième disque de camembert.",
+      "Passer le tout 3 min au micro-ondes.",
+      "Enfourner à 190°C (thermostat 6-7) pendant 10-15 minutes et vérifier la cuisson, le camembert doit commencer à brunir et la crème à bouillir."
+    ],
+    "category": "Salée"
+  },
+  {
+    "image": "cheesecake",
+    "name": "Cheese Cake",
+    "preparation": 30,
+    "cooking": 55,
+    "ingredients": [
+      "150g de sucre",
+      "2 c.à.s de farine",
+      "extrait de vanille",
+      "500g de fromage blanc",
+      "3 oeufs",
+      "25cl de crème fraiche",
+      "250g de biscuit",
+      "1 c.à.c de muscade",
+      "125g de beurre doux"
+    ],
+    "recipe": [
+      "Préchauffez le four à 180° (thermostat 6).",
+      "Tapissez de papier sulfurisé et préalablement beurré un moule de 23cm de diamètre.",
+      "Idéalement, le fond du moule doit être amovible, sinon laissez bien dépasser le papier pour un démoulage facile.",
+      "Mélangez les biscuits, la muscade et le beurre fondu.",
+      "Tapissez le fond du moule de ce mélange en tassant bien avec le dos d'une cuillère.",
+      "Placer cette préparation au réfrigérateur.",
+      "Battez la faisselle au fouet jusqu'à ce qu'elle soit lisse.",
+      "Ajoutez le sucre, la farine et les oeufs un à un.",
+      "Ajoutez ensuite la crème et le parfum de votre choix.",
+      "Versez cette préparation sur la croûte biscuité, si celle-ci \"dépasse\" de la crème, enlvez le surplus (cela riqsque de brûler).",
+      "Enfourner pour 50-55 minutes de cuisson jusqu'à ce que la préparation au fromage soit ferme au toucher.",
+      "Laissez refroidir puis démoulez.",
+      "À servir frais."
+    ],
+    "category": "Sucrée"
+  },
+  {
+    "image": "tiramisu",
+    "name": "Tiramisu",
+    "preparation": 15,
+    "cooking": 0,
+    "ingredients": [
+      "500g de mascarpone",
+      "6 oeufs",
+      "100g de sucre",
+      "2 verres de café",
+      "Amaretto ou Rhum (facultatif)",
+      "2 paquets de biscuits boudoirs ou cuillère",
+      "cacao en poudre"
+    ],
+    "recipe": [
+      "Commencez par séparer le blanc des jaunes d'oeufs.",
+      "Dans un saladier, battez de façon vive le sucre en poudre avec les jaunes d'oeuf jusqu'à ce que le mélange blanchisse.",
+      "Privilégiez le sucre roux pour un tiramisu encore plus savoureux.",
+      "Une fois bien mélangé, incorporer la mascarpone, mélanger bien jusqu'à obtenir une surface lisse.",
+      "Réservez au frais.",
+      "Montez les blancs en neige en les battants vivement à l'aide d'un fouet.",
+      "Pour rendre vos blancs bien ferme, ajoutez-y une pincée de sel.",
+      "Incorporez les blancs délicatement, à l'aide d'une spatule, à la préparation mascarpone et jaunes d'oeufs réalisée précédement.",
+      "Déposez la moitié des biscuits imbibés de café fort rapidement et éventuellement une cuillère d'Amaretto, sur le fond d'un plat pour constituer la première couche.",
+      "Recouvrez les biscuits d'une couche de crème au mascarpone avec la moitié de la préparation.",
+      "Disposez une deuxième et dernière couche de biscuits imbibés.",
+      "Recouvrez avec la dernière couche de crème mascarpone.",
+      "Placez au réfrigérateur pendant 4h minimum (idéalement 24h), le temps qu'il prenne bien au froid.",
+      "Avant de servir, saupoudrez le tiramisu de cacao amer ou de copaux de chocolat."
+    ],
+    "category": "Sucrée"
+  },
+  {
+    "image": "gougere",
+    "name": "Gougères au fromage",
+    "preparation": 20,
+    "cooking": 25,
+    "ingredients": [
+      "300g de farine tamisée",
+      "2 pincées de muscade",
+      "poivre & sel",
+      "8 oeufs + 1 jaune (facultatif)",
+      "300g de gruyère râpé",
+      "160g de beurre + 15g pour la plaque"
+    ],
+    "recipe": [
+      "Préchauffez le four à 200°C (th 6-7).",
+      "Dans une casserole, portez 25 cl d'eau à ébullition, avec le beurre coupé en morceaux + 1 cuillère à café de sel.",
+      "Hors du feu, ajoutez la farine d'un coup.",
+      "Mélangez vivement, et faites dessécher pendant 1 min sur feu doux.",
+      "Laissez tiédir quelques instants, et incorporez les oeufs un par un en mélangeant bien.",
+      "Ajoutez le gruyère râpé, la muscade, le sel et le poivre.",
+      "Déposez cette pâte à l'aide de 2 cuillères à café, en petits tas séparés, sur une plaque beurrée.",
+      "Vous pouvez dorer les petites gougères avec un jaune d'oeuf, à l'aide d'un pinceau.",
+      "Enfournez 25 min en surveillant."
+    ],
+    "category": "Salée"
+  },
+  {
+    "image": "souffle",
+    "name": "Soufflé au fromage",
+    "preparation": 15,
+    "cooking": 35,
+    "ingredients": [
+      "120g de farine tamisée",
+      "80cl de lait",
+      "muscade",
+      "8 oeufs",
+      "300g d'emmental ou de gruyère râpé",
+      "120g de beurre"
+    ],
+    "recipe": [
+      "Préchauffer le four à 180°C (thermostat 6). Beurrer le moule.",
+      "Chauffer le beurre dans une casserole, ajouter la farine et remuer rapidement pendant 1 min.",
+      "Ajouter le lait tiédi, remuer au fouet pendant quelques minutes à feu doux.",
+      "Retirer la casserole du feu.",
+      "Séparer les blancs et les battre fermement (avec une pincée de sel).",
+      "Dans la casserole refroidie, ajouter les jaunes d'oeufs un à un, puis le fromage râpé.",
+      "Mettre une pincée de muscade, poivrer. Saler peu car le fromage contient déjà du sel.",
+      "Incorporer les blancs d'oeufs battus en mélangeant délicatement.",
+      "Verser dans le moule, au maximum jusqu'à 4 cm du bord.",
+      "Enfourner pendant 35 minutes en position chaleur tournante."
+    ],
+    "category": "Salée"
+  }
+]
