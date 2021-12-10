@@ -8,6 +8,8 @@
 import UIKit
 
 class RecipeNameTableViewCell: UITableViewCell {
+    
+    var style = Style()
 
     @IBOutlet weak var recipeName: UILabel!
     
@@ -24,6 +26,7 @@ class RecipeNameTableViewCell: UITableViewCell {
     func configure(_ name: String) {
         self.name = name
         self.recipeName?.text = name
+        recipeName.font = style.title
     }
 
 }

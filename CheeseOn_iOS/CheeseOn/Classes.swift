@@ -64,8 +64,10 @@ class Style {
     let black: UIColor! = UIColor.black
     let transparent: UIColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 0)
     
-    let corp: UIFont! = UIFont(name: "Helvetica Neue Light", size: 12)
+    let corp: UIFont! = UIFont(name: "Helvetica Neue Light", size: 15)
+    let middle: UIFont! = UIFont(name: "Helvetica Neue", size: 17)
     let login: UIFont! = UIFont(name: "Helvetica Neue Light", size: 20)
+    let title: UIFont! = UIFont(name: "Helvetica Neue Light", size: 25)
     init() {
         
     }

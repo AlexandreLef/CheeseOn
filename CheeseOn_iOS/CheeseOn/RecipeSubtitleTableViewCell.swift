@@ -8,6 +8,8 @@
 import UIKit
 
 class RecipeSubtitleTableViewCell: UITableViewCell {
+    
+    var style = Style()
 
     @IBOutlet weak var subtitleLabel: UILabel!
     
@@ -18,6 +20,7 @@ class RecipeSubtitleTableViewCell: UITableViewCell {
 
     func configure(_ subtitle: String) {
         self.subtitleLabel.text = subtitle
+        subtitleLabel.font = style.middle
     }
 
 }
