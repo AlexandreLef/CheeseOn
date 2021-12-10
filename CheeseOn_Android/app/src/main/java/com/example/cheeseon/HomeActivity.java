@@ -63,6 +63,15 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        mBinding.temp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent recipe = new Intent(getApplicationContext(), RecipeActivity.class);
+                recipe.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                startActivity(recipe);
+            }
+        });
+
         setContentView(v);
     }
 }
