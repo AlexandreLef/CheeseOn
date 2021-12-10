@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="app/src/main/res/drawable-v24/rounded_image.xml" value="0.4432291666666667" />
         <entry key="app/src/main/res/drawable/rounded_checkbox.xml" value="0.4432291666666667" />
         <entry key="app/src/main/res/drawable/rounded_edittext.xml" value="0.421875" />
@@ -11,6 +12,13 @@
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3234375" />
         <entry key="app/src/main/res/layout/activity_recipe_layout.xml" value="0.375" />
+=======
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.18297101449275363" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_recipe.xml" value="0.335" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3260416666666667" />
+>>>>>>> android-Quentin
       </map>
     </option>
   </component>

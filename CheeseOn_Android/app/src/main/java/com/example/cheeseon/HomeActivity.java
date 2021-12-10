@@ -70,6 +70,7 @@ public class HomeActivity extends AppCompatActivity implements OnitemClick {
         mBinding.recipeGrid.setAdapter(mAdapter);
         mAdapter.FillArray();
 
+
         setContentView(v);
     }
 

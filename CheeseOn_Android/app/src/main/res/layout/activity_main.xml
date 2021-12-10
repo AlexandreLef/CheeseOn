@@ -97,7 +97,6 @@
         android:text="@string/connexion"
         android:textAlignment="center"
         android:textAllCaps="false"
-        android:textColor="@color/black"
         android:textSize="@dimen/font_larger"
 
         app:layout_constraintBottom_toBottomOf="@id/bottomGuideline"
