@@ -2,6 +2,7 @@ package com.example.cheeseon;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.Manifest;
 import android.app.Activity;
@@ -16,6 +17,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -64,14 +66,19 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
-        mBinding.themeChange.setOnClickListener((new View.OnClickListener() {
+        mBinding.themeChanger.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onClick(View v) {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 SharedPreferences.Editor editor = getSharedPreferences("com.example.srushtee.dummy", MODE_PRIVATE).edit();
-                //editor.putBoolean("service_status", this.isChecked());
-                editor.commit();
+                editor.putBoolean("service_status", mBinding.themeChanger.isChecked());
+                editor.apply();
+                if (isChecked) {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                } else {
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                }
             }
-        }));
+        });
 
         mBinding.logOutButton.setOnClickListener(new View.OnClickListener() {
             @Override
