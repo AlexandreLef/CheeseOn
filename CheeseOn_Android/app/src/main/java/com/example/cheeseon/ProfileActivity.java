@@ -68,7 +68,7 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 SharedPreferences.Editor editor = getSharedPreferences("com.example.srushtee.dummy", MODE_PRIVATE).edit();
-                editor.putBoolean("service_status", this.isChecked());
+                //editor.putBoolean("service_status", this.isChecked());
                 editor.commit();
             }
         }));
