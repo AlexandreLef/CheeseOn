@@ -26,7 +26,7 @@ class RecipeNameTableViewCell: UITableViewCell {
     func configure(_ name: String) {
         self.name = name
         self.recipeName?.text = name
-        recipeName.font = style.middle
+        recipeName.font = style.title
     }
 
 }

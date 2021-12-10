@@ -66,6 +66,7 @@ class Style {
     let corp: UIFont! = UIFont(name: "Helvetica Neue Light", size: 15)
     let middle: UIFont! = UIFont(name: "Helvetica Neue", size: 17)
     let login: UIFont! = UIFont(name: "Helvetica Neue Light", size: 20)
+    let title: UIFont! = UIFont(name: "Helvetica Neue Light", size: 25)
     init() {
         
     }
