@@ -50,7 +50,7 @@ class ProfileViewController: UIViewController,
         toggle.backgroundColor = style.yellow
         disconnect.tintColor = style.purple
         
-        if (user == nil) {
+        if (user == nil || user == "") {
             username.text = "Anonyme"
         } else {
             username.text = user

@@ -22,7 +22,7 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         
         
         // Do any additional setup after loading the view.
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(LogInViewController.home)) // Save the tap on button
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(LogInViewController.connect)) // Save the tap on button
         connexion.addGestureRecognizer(gesture) // Cast the gesture
         let gest = UITapGestureRecognizer(target: self, action: #selector(LogInViewController.changeColor)) // Save the tap on button
         radio.addGestureRecognizer(gest) // Cast the gesture
@@ -47,19 +47,28 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated) // Remove the navigation bar on the view
         overrideUserInterfaceStyle = Singleton.sharedInstance.colorTheme
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if UserDefaults.standard.bool(forKey: "KeepConnected") {
+            self.goHome()
+        }
     }
         
-    @objc func home() {     // Change page to Home page
+    @objc func connect() {     // Change page to Home page
+        let user = User(userName: username.text!, keepConneced: keepConnectStatus)
+        user.registerUser()
+        self.goHome()
+    }
+    
+    func goHome() {
         let storyboard = UIStoryboard(name: "Main" , bundle: nil)
         let homeViewController = storyboard.instantiateViewController(withIdentifier:"homeViewController")as! HomeViewController
         self.navigationController?.pushViewController(homeViewController, animated:true) // Push the Home page
     }
-    
-    @IBAction func connect() {
-        let user = User(userName: username.text!, keepConneced: keepConnectStatus)
-        user.registerUser()
-    }
-    
+
     @objc func changeColor() {
         if radio.backgroundColor == style.transparent {
             radio.backgroundColor = style.yellow
