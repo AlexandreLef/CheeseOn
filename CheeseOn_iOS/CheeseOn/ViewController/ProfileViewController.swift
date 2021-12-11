@@ -52,7 +52,7 @@ class ProfileViewController: UIViewController,
         disconnect.tintColor = style.purple
         
         user = UserDefaults.standard.string(forKey: "Username")
-        if (user == nil) {
+        if (user == nil || user == "") {
             username.text = "Anonyme"
         } else {
             username.text = user
